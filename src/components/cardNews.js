@@ -24,10 +24,12 @@ class cardNews extends HTMLElement {
         // linkTitle - filho do cardleft
         const linkTitle = document.createElement("a");
         cardLeft.appendChild(linkTitle);
+        linkTitle.textContent = this.getAttribute("title");
         
         // newsContent - filho do cardLeft
         const newsContent = document.createElement("p");
         cardLeft.appendChild(newsContent);
+        newsContent.textContent = this.getAttribute("content");
 
         // CardRight
         const cardRight = document.createElement("div");
